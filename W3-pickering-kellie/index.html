@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta charset="utf-8">
+  <title>Floret Fraiche | Instant Flower Delivery</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+</head>
+<body>
+
+  <!-- Primary Page Layout ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="container">
+
+  <header class="row">
+    <div class="eight columns">
+      <a href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+      <h1>Floret Fraiche</h1>
+      <p>Instant Flower Delivery Service</p>
+    </div>
+    <div class="four columns" id="ffdetails">
+      <p>4374 Forevergreen Road</p>
+      <p>Newton Falls, OH 44444</p>
+      <p><strong>Mon-Fri: 7:00 AM to 7:00 PM</strong></p>
+      <p><strong>Sat-Sun: 7:00 AM to 2:00 PM</strong></p>
+    </div>
+  </header>
+
+  <nav class="row">
+    <ul>
+      <li><button>News</button></li>
+      <li><button>Products</button></li>
+      <li><button class="active">Order</button></li>
+      <li><button>Testimonials</button></li>
+    </ul>
+  </nav>
+
+  <div class="row" id="content">
+    <div class="row">
+
+      <aside class="four columns u-pull-right twelve">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Small Bouquet</strong></td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td><strong>Large Bouquet</strong></td>
+              <td>$30.00</td>
+            </tr>
+            <tr>
+              <td><strong>Premium Bouquet</strong></td>
+              <td>$50.00</td>
+            </tr>
+            <tr>
+              <td><strong>Simple Vase</strong></td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td><strong>Decorative Vase</strong></td>
+              <td>$10.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+
+      <article class="seven columns u-full-width u-pull-left twelve">
+        <form>
+          <!-- Personal Information -->
+          <h2>Customer Information</h2>
+          <div class="row u-full-width">
+            <div class="six columns">
+              <label>Name: <input class="eight columns u-pull-right" type="text" placeholder="First Last"></label>
+            </div>
+            <div class="six columns">
+              <label>Phone: <input class="eight columns u-pull-right" type="tel" placeholder="000-000-0000"></label>
+            </div>
+          </div>
+          <div class="row u-full-width">
+            <div class="six columns">
+              <label>Address: <input class="eight columns u-pull-right" type="text" placeholder="123 Oak St, Kent, OH, 12345"></label>
+            </div>
+            <div class="six columns">
+              <label>Email: <input class="eight columns u-pull-right" type="email" placeholder="somebody@email.com"></label>
+            </div>
+          </div>
+          <!-- Delivery Information -->
+          <h2>Order Details</h2>
+          <div class="row u-full-width">
+            <div class="two columns label">
+              <label>Bouquet:</label>
+            </div>
+            <div class="four columns options">
+              <label>
+                <input type="radio" name="bouquet" value="Small">
+                <span class="label-body">Small</span>
+              </label>
+              <label>
+                <input type="radio" name="bouquet" value="Large">
+                <span class="label-body">Large</span>
+              </label>
+              <label>
+                <input type="radio" name="bouquet" value="Premium">
+                <span class="label-body">Premium</span>
+              </label>
+            </div>
+            <div class="two columns label">
+              <label>Vase:</label>
+            </div>
+            <div class="four columns options">
+              <label>
+                <input type="radio" name="vase" value="Simple">
+                <span class="label-body">Simple</span>
+              </label>
+              <label>
+                <input type="radio" name="vase" value="Decorative">
+                <span class="label-body">Decorative</span>
+              </label>
+              <label>
+                <input type="radio" name="vase" value="None">
+                <span class="label-body">None</span>
+              </label>
+            </div>
+          </div>
+          <label class="options">Bouquet Arrangement: <textarea class="u-full-width" placeholder="What kind of flowers would you like in your bouquet?"></textarea></label>
+          <label class="options">Delivery Instructions: <textarea class="u-full-width" placeholder="When and where should we deliver your order?"></textarea></label>
+          <!-- Submit Button -->
+          <button id="submit">Place Order</button>
+        </form>
+      </article>
+
+    </div>
+    <h2>Popular Flower Options</h2>
+    <div class="row" id="gallery">
+      <div class="three columns">
+        <img src="images/rose.jpg" alt="rose">
+        <p>Red Roses</p>
+      </div>
+      <div class="three columns">
+        <img src="images/dahlia.jpg" alt="dahlia">
+        <p>Dahlias</p>
+      </div>
+      <div class="three columns">
+        <img src="images/tigerlily.jpg" alt="tigerlily">
+        <p>Tigerlilies</p>
+      </div>
+      <div class="three columns">
+        <img src="images/peony.jpg" alt="peony">
+        <p>Pink Peonies</p>
+      </div>
+
+    </div> <!-- End Gallery -->
+  </div> <!-- End Content -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <p>Fictional website created by Kellie Pickering for educational purposes.</p>
+    </div>
+  </footer>
+
+  </div> <!-- End Container -->
+
+  <!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>

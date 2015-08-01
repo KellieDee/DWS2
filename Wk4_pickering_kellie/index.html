@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Gluten-Free Recipes</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/gallery.js"></script>
+    <script type="text/javascript">
+        var inc=1;
+        $(function () {
+            $('#next').click(
+                    function () {
+                        var currentFig = "#fig" + inc;
+                        if (inc == 6) {
+                            nextFig = "#fig1";
+                        } else {
+                            nextFig = "#fig" + (inc + 1);
+                        }
+                        $(nextFig).addClass('showFig');
+                        $(currentFig).removeClass('showFig');
+                        inc++;
+                        if (inc == 7) { inc = 1; }
+                    }
+            );
+            $('#previous').click(
+                    function () {
+                        var currentFig = "#fig" + inc;
+                        if (inc == 1) {
+                            prevFig = "#fig6";
+                        } else {
+                            prevFig = "#fig" + (inc - 1);
+                        }
+                        $(prevFig).addClass('showFig');
+                        $(currentFig).removeClass('showFig');
+                        inc--;
+                        if (inc == 0) { inc = 6; }
+                    }
+            );
+        });
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="images/cookies1.png" alt="homepage" id="cookies"></a>
+                <h1><strong>Gluten-Free</strong> Recipes</h1>
+            </div>
+            <!-- LOGIN FORM -->
+            <div id="login">
+                <form>
+                    <div class="row">
+                        <label for="user">username:</label><input type="text" id="user" name="user" placeholder="member@gluten-free.com">
+                    </div>
+                    <div class="row">
+                        <label for="pass">password:</label><input type="password" id="pass" name="pass">
+                    </div>
+                    <div class="row">
+                        <button id="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
+            <!-- HERO IMAGE -->
+            <img src="images/hero.jpg" alt="bakery" id="hero">
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#daily">daily feature</a></li>
+                <li><a href="#favorites">fan favorites</a></li>
+                <li><a href="#">all recipes</a></li>
+                <li class="active"><a href="#" id="store">online store</a></li>
+            </ul>
+        </nav>
+
+        <!-- ABOUT -->
+        <div id="about">
+            <p>Gluten got your stomach upset? Tired of craving meals you can no longer eat? Not a problem! Here at Gluten-Free Recipes, we work with top chefs across the country to craft gourmet gluten-free alternatives to all your favorite foods. Our members have access to over 1,000 gluten-free recipes! Stop destroying your stomach and your diet, and</p>
+            <button id="join">Join Today!</button>
+        </div>
+
+        <!-- DAILY FEATURE -->
+        <section id="daily">
+            <h2>daily feature</h2>
+            <!-- VIDEO EMBED -->
+            <div id="video">
+                <div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="http://www.foodnetwork.com/videos/chewy-chocolate-chip-cookies-0178055.embed.html" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- RECIPE TABLE -->
+            <div id="recipe">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><img src="images/bakery23.png" class="donut" alt="donut"> The Chewy Gluten Free <img src="images/bakery23.png" class="donut" alt="donut"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8 ounces unsalted butter</td>
+                        </tr>
+                        <tr>
+                            <td>2 cups brown rice flour</td>
+                        </tr>
+                        <tr>
+                            <td>1/4 cup cornstarch</td>
+                        </tr>
+                        <tr>
+                            <td>2 tablespoons tapioca flour</td>
+                        </tr>
+                        <tr>
+                            <td>1 teaspoon xantham gum</td>
+                        </tr>
+                        <tr>
+                            <td>1 teaspoon kosher salt</td>
+                        </tr>
+                        <tr>
+                            <td>1 teaspoon baking soda</td>
+                        </tr>
+                        <tr>
+                            <td>1/4 cup sugar</td>
+                        </tr>
+                        <tr>
+                            <td>1 1/4 cup light brown sugar</td>
+                        </tr>
+                        <tr>
+                            <td>1 whole egg</td>
+                        </tr>
+                        <tr>
+                            <td>1 egg yolk</td>
+                        </tr>
+                        <tr>
+                            <td>2 tablespoons whole milk</td>
+                        </tr>
+                        <tr>
+                            <td>1 1/2 teaspoons vanilla extract</td>
+                        </tr>
+                        <tr>
+                            <td>12 ounces semisweet chocolate chips</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAVORITES GALLERY -->
+        <section id="favorites">
+            <h2>fan favorites</h2>
+            <div class="container">
+                <div id="carousel">
+                    <!-- IMAGES -->
+                    <figure id="fig1" class="showFig"><a href="#"><img src="images/chocchip.jpg" width="250" height="200" alt="chocolate chip cookies"></a></figure>
+                    <figure id="fig2"><a href="#"><img src="images/choccake.jpg" width="250" height="200" alt="chocolate cake"></a></figure>
+                    <figure id="fig3"><a href="#"><img src="images/quinoapasta.jpg" width="250" height="200" alt="quinoa pasta"></a></figure>
+                    <figure id="fig4"><a href="#"><img src="images/bananabread.jpg" width="250" height="200" alt="banana bread"></a></figure>
+                    <figure id="fig5"><a href="#"><img src="images/pizzacrust.jpg" width="250" height="200" alt="pizza crust"></a></figure>
+                    <figure id="fig6"><a href="#"><img src="images/pumpkinpie.jpg" width="250" height="200" alt="pumpkin pie"></a></figure>
+                </div>
+            </div>
+            <div class="options">
+                <!-- OPTIONS -->
+                <p id="toggle"><button id="toggle-axis">Toggle Axis</button></p>
+                <p id="navigation">
+                    <input type="hidden" id="panel-count" value="6">
+                    <button id="previous" data-increment="-1">Previous</button>
+                    <button id="next" data-increment="1">Next</button>
+                </p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Fictional website created by Kellie Pickering for educational purposes only.</p>
+            <p>Images from Compfight. Video and recipe from Food Network. Icons from FlatIcon. Background from Subtle Patterns.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* ----- MAIN STYLES ----- */
+
+body {
+    background-color: #B4B9B6;
+    }
+
+.container {
+    background-color: #E6E6FA;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    padding: 0 1em;
+    }
+
+h2 {
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.5em;
+    }
+
+
+/* ----- HEADER & FOOTER STYLES -----*/
+
+h1, header p, footer p {
+    margin: 0;
+    }
+
+#logo {
+    float: left;
+    margin: .5em 1em 0 0;
+    }
+
+header, footer {
+    background-color: #000;
+    color: #FFF;
+    margin: 0;
+    padding: 1em;
+    }
+
+header .four {
+    text-align: right;
+    }
+
+footer {
+    font-size: .8em;
+    text-align: center;
+    }
+
+
+/* ----- NAVIGATION STYLES -----*/
+
+nav {
+    text-align: center;
+    }
+
+nav ul {
+    margin: .5em 0 0 0;
+    }
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    }
+
+button {
+    background-color: #AC82C8;
+    display: block;
+    float: left;
+    width: 25%;
+    }
+
+button:hover, button.active {
+    background-color: #8757A8;
+    border-left: 2px solid #E6E6FA;
+    border-right: 2px solid #E6E6FA;
+    }
+
+button, button:hover {
+    border: none;
+    border-radius: 0;
+    color: #FFF;
+    padding: 0;
+    text-align: center;
+    }
+
+
+/* ----- FORM STYLES ----- */
+
+article {
+    margin-bottom: 1em;
+    }
+
+input, textarea {
+    font-weight: normal;
+    font-size: .8em;
+    font-style: italic;
+    }
+
+textarea {
+    margin-bottom: .3em;
+    }
+
+.check {
+    display: inline;
+    }
+
+.label {
+    text-align: right;
+    }
+
+.options {
+    text-align: left;
+    }
+
+#submit {
+    width: 50%;
+    }
+
+
+/* ------ TABLE STYLES ----- */
+
+aside {
+    background-color: #FEFEFF;
+    margin-bottom: 2em;
+    padding: .5em;
+    }
+
+table {
+    margin: 0;
+    }
+
+thead {
+    font-size: 1.3em;
+    font-variant: small-caps;
+    }
+
+th {
+    border-bottom: 3px solid #AC82C8;
+    color: #AC82C8;
+    padding: .3em;
+    }
+
+td {
+    border-bottom: 1px solid #E6E6FA;
+    }
+
+tbody tr:nth-child(odd) {
+    background-color: #E7E7FA;
+    }
+
+tbody tr:hover {
+    background-color: #8757A8;
+    color: #FFF;
+    }
+
+
+/* ------ GALLERY STYLES ----- */
+
+#gallery {
+    margin: 1em 0;
+    }
+
+#content {
+    background-color: #E6E6FA;
+    margin-bottom: .6em;
+    padding: 1em;
+    text-align: center;
+    }
+
+#content img {
+    height: auto;
+    max-width: 100%;
+    }
+
+.three {
+    background-color: #FEFEFF;
+    border: 1px solid #000;
+    }
+
+.three p {
+    color: #8757A8;
+    font-weight: bold;
+    margin: .3em;
+    }
+
+
+/* ------ MEDIA QUERIES ----- */
+
+/* Larger than mobile */
+/* Tablet Portrait size to standard 960 */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {background-color:blue;}
+    h1 {font-size:3em;}
+    #ffdetails {font-size: .8em;}
+    }
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {background-color:red;}
+    button {border-left: 2px solid #E6E6FA;
+            border-right: 2px solid #E6E6FA;
+            width: 50%;}
+    h1 {font-size:3em;}
+    header {text-align:center;}
+    #ffdetails {font-size: .7em;}
+    .label {text-align: left;}
+    .three {margin-top:1em;
+        padding-top:1em;}
+    }
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+    body {background-color: green;}
+    button {width: 100%;}
+    header {text-align:center;}
+    nav ul li {display:block;}
+    #logo {display:none;}
+    #ffdetails {display:none;}
+    #submit {width: 100%;}
+    .label {text-align: left;}
+    .three {margin-top:1em;
+            padding-top:1em;}
+    }

@@ -1,0 +1,209 @@
+/***** UBIQUITOUS STYLES *****/
+
+
+body {
+    max-width: 960px;
+    margin: 2.60416667% auto;
+    background-color: #3f2202;
+    font: .9em "Trebuchet MS", Arial, sans-serif;
+    }
+
+h1 {
+    padding: 1%;
+    }
+
+h1, h2 {
+    margin: 0;
+    background-color: #2a1909;
+    text-align: center;
+    color: #fff;
+    }
+
+h2 {
+    font-variant: small-caps;
+    }
+
+footer {
+    padding: 1%;
+    margin: 0;
+    background-color: #2a1909;
+    text-align: center;
+    color: #fff;
+    clear: both;
+    }
+
+a[href^="#"] {                                      /* Attribute Selector */
+    text-decoration: none;                          /* All anchored links have underline removed */
+    }
+
+a:link, a:visited {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    color: #e0d4b8;
+    }
+
+a:hover, a:active {
+    font-variant: small-caps;
+    font-weight: bold;
+    }
+
+nav li:hover, nav li:active {
+    background-color: #2a1909;
+    }
+
+#wrapper {
+    width: 90%; /* 864px */
+    margin: 0 auto;
+    padding: 1.15740741%; /* 10px */
+    border: 5px solid #9f7032;
+    background-color: #e0d4b8;
+    overflow: hidden;
+    }
+
+
+
+/***** SECTION STYLES *****/
+
+
+header img, #cards {
+    width: 65.8950617267%;
+    margin: 2% 0;
+    float: left;
+    clear: right;
+    }
+
+nav, #npcs {
+    width: 32.9475308633%;
+    margin: 2% 0;
+    float: right;
+    }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    }
+
+nav li {
+    margin: 0.52083333%;
+    padding: 0.52083333%;
+    background-color: #855561;
+    display: block;
+    color: #fff;
+    text-align: center;
+    }
+
+#overview {
+    margin-top: 2%;
+    clear: both;
+    }
+
+#cards, #npcs {
+    border: 1px solid #2a1909;
+    background-color: #efe6d9;
+    }
+
+#cards p {
+    padding: 1%;
+    }
+
+#npcs p {
+    padding: 1.9%;
+    }
+
+
+
+/***** TABLE STYLES *****/
+
+#cards table {
+    margin: 0 auto;
+    padding: 1%;
+    }
+
+#cards td {
+    padding: .8%;
+    border-bottom: 1px dashed #855561;
+    }
+
+#cards td:nth-child(1), #cards td:nth-child(2) {
+    width: 11%;
+    }
+
+#cards td:nth-child(2) + td {                       /* Adjacent Sibling Selector */
+    width: 37%;
+    font-weight: bold;
+    color: #3f2202;
+    }
+
+#cards tr:nth-child(1) {                            /* nth Child Selector */
+    font-size: 1.6em;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #2a1909;
+    }
+
+
+#npcs tr:nth-child(odd) {                           /* Structural Pseudo-Class */
+    background-color: #e6c9c1;                         /* Tables zebra-striped for better readability */
+    }
+
+#npcs tr:nth-child(even) {
+    color: #fff;
+    background-color: #855561;
+    }
+
+#npcs table {
+    margin: 0 auto;
+    padding: 1%;
+    font-size: .85em;
+    }
+
+#npcs td {
+    padding: 2%;
+    }
+
+#npcs tr > :first-child {                           /* Child Selector */
+    font-weight: bold;                              /* NPC names bolded and aligned right */
+    text-align: right;
+    width: 30%;
+    }
+
+
+
+/***** MEDIA QUERIES *****/
+
+
+/* Tablet Portrait size to standard 960 */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    nav li              { margin: 1%; }
+    #cards              { width: 63%; }
+    #npcs               { width: 36%; }
+    #cards table, #npcs table
+                        { width: 100%; }
+    #cards td:nth-child(2)
+                        { width: 13%; }
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header img          { width: 100%; }
+    nav                 { clear: both;
+                          margin: 1%  auto; }
+    nav, #cards, #npcs  { width: 100%; }
+    nav li              { display: inline-block;
+                          width: 31.6%;
+                          margin: 0; }
+    #cards, #npcs       { float: none; }
+    #npcs table         { width: 100%; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+    header img          { display: none; }
+    nav li              { margin: 1%; }
+    nav, #cards, #npcs  { width: 100%; }
+    #cards, #npcs       { float: none; }
+    #npcs table         { width: 100%; }
+    #cards table        { font-size: .95em; }
+    #cards td:nth-child(2)
+                        { width: 15%; }
+}

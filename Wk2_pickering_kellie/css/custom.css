@@ -1,0 +1,131 @@
+/*****      GLOBAL        *****/
+
+body {
+    background-color: #ddd;
+    padding-top: 70px;
+    }
+
+h2 {
+    color: #d58512;
+    margin-bottom: 0;
+    }
+
+h3 {
+    font-size: 1.1em;
+    margin-top: 0;
+    text-align: center;
+    }
+
+
+
+/*****      CONTENT     *****/
+
+#description {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2em;
+    padding: 1em;
+    color: #9d9d9d;
+    }
+
+.glyphicon-menu-hamburger, .glyphicon-star {
+    color: #d58512;
+    }
+
+.glyphicon-star {
+    font-size: .8em;
+    }
+
+.container:nth-child(2) {
+    background-color: #fff;
+    }
+
+.jumbotron {
+    margin-top: 1em;
+    background-color: #fff;
+    text-align: left;
+    }
+
+.caption {
+    margin-top: 1em;
+    text-align: center;
+    font-size: .8em;
+    }
+
+.btn-block {
+    text-align: center;
+    background-color: #d58512;
+    border-color: #d58512;
+    }
+
+.btn-block:hover {
+    background-color: #985f0d;
+    border-color: #985f0d;
+    }
+
+
+
+/*****      RIGHT SIDE      *****/
+
+form {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: right;
+    }
+
+form label {
+    margin: 1em 1em .2em 0;
+    }
+
+#login {
+    margin: 1em 0;
+    background-color: #d58512;
+    border-color: #d58512;
+    color: #fff;
+    width: 10em;
+    }
+
+#login:hover {
+    background-color: #985f0d;
+    color: #fff;
+    }
+
+thead {
+    font-weight: bold;
+    background-color: #fff;
+    color: #d58512;
+    border-bottom: 2px solid #d58512;
+    }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff;
+    }
+
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #efe6d9;
+    }
+
+.table-hover > tbody > tr:hover {
+    background-color: #d58512;
+    color: #fff;
+    }
+
+.carousel-indicators {
+    bottom: 0;
+    }
+
+
+/*****      FOOTER      *****/
+
+footer {
+    margin-top: 2em;
+    padding: 1em 0;
+    border-top: 1px solid #ddd;
+    font-size: .8em;
+    }
+
+footer p {
+    margin: .5em;
+    color: #9d9d9d;
+    }
